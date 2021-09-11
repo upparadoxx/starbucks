@@ -20,7 +20,6 @@ const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
 
 window.addEventListener('scroll', _.throttle(function(){
-  console.log(window.scrollY);
   if(window.scrollY > 500) {
     gsap.to(badgeEl, .6, {
       opacity: 0,
